@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp">
+
+    <TextView
+        android:id="@+id/itemTxtIncomingMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/incoming_chat_bubble"
+        android:maxWidth="230dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:text="Hello. Do you know me?"
+        android:textSize="16sp"
+        app:srcCompat="@drawable/incoming_chat_bubble" />
+
+
+        <TextView
+            android:id="@+id/itemTxtOutgoingMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="230dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/outgoing_chat_bubble"
+            android:layout_alignParentRight="true"
+            android:text="Hello. Do you know me? "
+            android:textSize="16sp"
+            app:srcCompat="@drawable/incoming_chat_bubble"
+            android:drawableRight="@drawable/sent"
+            android:paddingRight="10dp"
+            tools:layout_editor_absoluteX="208dp" />
+
+
+
+</RelativeLayout>

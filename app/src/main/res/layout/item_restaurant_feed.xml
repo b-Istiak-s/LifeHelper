@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:padding="5dp"
+    app:cardBackgroundColor="#0B091F"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/cardRestaurantFeed"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgFeedPosterProfile"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/circle_user" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtFeedPosterName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:text="Name"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtFeedPostedTimestamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="timestamp"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtFeedPostDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu felis mi. Phasellus nec tellus eu ante pharetra condimentum eget nec dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed rutrum, magna a cursus convallis, sapien quam convallis velit, non dictum ante lacus nec augue. Vivamus ipsum tortor, maximus a sem et, scelerisque venenatis quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean finibus porta tellus et euismod. Quisque porta odio eu lacinia scelerisque. In arcu magna, accumsan non volutpat vel, pharetra et enim. Donec viverra cursus nisi et mattis. Aliquam non luctus ex. Ut quis pulvinar elit, quis tempor sapien. Integer tempus risus massa. Sed ultricies massa sapien, sit amet faucibus elit ultrices et.  Vestibulum vehicula sapien vel leo consequat, ac ultrices tellus auctor. " />
+
+        <ImageView
+            android:id="@+id/imgFeedPostImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
